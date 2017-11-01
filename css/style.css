@@ -1,0 +1,184 @@
+@charset "UTF-8";
+* {
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-size: .32rem;
+  font-style: normal;
+  font-weight: normal; }
+
+ul, li {
+  list-style: none; }
+
+html {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  user-select: none; }
+
+img, div, body, html, ul, li, a {
+  -webkit-touch-callout: none; }
+
+input, button {
+  outline: 0; }
+
+button {
+  cursor: pointer; }
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #ccc; }
+
+body, html, .wrap {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+#btn {
+  width: 5rem;
+  height: 3rem;
+  text-align: center;
+  line-height: 3rem;
+  color: #fff;
+  background: #000;
+  border: none;
+  border-radius: 10px; }
+
+/* .mark{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: transform .5s linear;
+    background: #eee;
+     display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transform: translateY(100%);
+}
+.show{
+    transform: translateY(0%);
+}
+.main{
+    overflow-y: scroll;
+    flex:1;
+    ol{
+        width: 100%;
+        display: flex;
+        margin-top: 1rem;
+        li{
+            flex:1;
+            text-align: center;
+        }
+    }
+}
+.rl{
+    width: 100%;
+    h3{
+        width: 100%;
+        height: 3rem;
+        line-height: 3rem;
+        text-align: center;
+        margin-top: 3rem;
+    }
+    ul{
+        width: 100%;
+        height: auto;
+        li{
+            width: 14.28%;
+            display: inline-block;
+            text-align: center;
+            line-height: 2rem;
+        }
+    }
+} */
+.mark {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: transform 1s linear;
+  transform: translateY(100%);
+  background: #000;
+  opacity: .6; }
+  .mark .main {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    background: #fff; }
+    .mark .main .tit {
+      width: 96%;
+      padding: 1rem 2%;
+      border-bottom: .01rem solid #ccc; }
+      .mark .main .tit button {
+        color: #84DCC3;
+        border: .1rem solid #84DCC3;
+        padding: .2rem .5rem;
+        border-radius: .2rem;
+        background: #fff;
+        position: absolute;
+        top: .6rem;
+        right: 2%; }
+    .mark .main ol {
+      display: flex;
+      padding: .5rem 0; }
+      .mark .main ol li {
+        flex: 1;
+        text-align: center; }
+        .mark .main ol li:first-child, .mark .main ol li:last-child {
+          color: #E8C4B8; }
+    .mark .main .rl {
+      width: 100%;
+      height: 22rem;
+      overflow-y: scroll; }
+      .mark .main .rl h3 {
+        width: 100%;
+        font-weight: 400;
+        text-align: center; }
+      .mark .main .rl ul {
+        width: 100%; }
+        .mark .main .rl ul li {
+          width: 14.28%;
+          display: inline-block;
+          height: 2.5rem;
+          text-align: center;
+          line-height: 2.5rem;
+          position: relative; }
+        .mark .main .rl ul li.bg {
+          background: skyblue;
+          color: #fff; }
+        .mark .main .rl ul li.start, .mark .main .rl ul li.end {
+          background: green;
+          color: #fff; }
+        .mark .main .rl ul li.start:before {
+          content: "入住";
+          position: absolute;
+          top: 1.5rem;
+          left: .5rem;
+          font-size: .6rem;
+          width: 2.5rem;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          text-align: center;
+          color: #fff;
+          background: rgba(0, 0, 0, 0.5); }
+        .mark .main .rl ul li.end:before {
+          content: "离店";
+          position: absolute;
+          top: 1.5rem;
+          left: .5rem;
+          font-size: .6rem;
+          width: 2.5rem;
+          height: 1.5rem;
+          line-height: 1.5rem;
+          text-align: center;
+          color: #fff;
+          background: rgba(0, 0, 0, 0.5); }
+
+.show {
+  transform: translateY(0%); }
+
+/*# sourceMappingURL=style.css.map */
